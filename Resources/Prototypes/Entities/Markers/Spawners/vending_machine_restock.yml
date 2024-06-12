@@ -11,8 +11,16 @@
         state: base
       - sprite: Objects/Specific/Service/vending_machine_restock.rsi
         state: refill_discount
-  - type: GenericSpawner
-    entityTable: GenericVendorRestockEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - VendingMachineRestockDiscountDans
+      - VendingMachineRestockChang
+      - VendingMachineRestockDonut
+      - VendingMachineRestockGetmoreChocolateCorp
+      - VendingMachineRestockRobustSoftdrinks
+      - VendingMachineRestockHotDrinks
+      - VendingMachineRestockHappyHonk
+      - VendingMachineRestockCondimentStation
 
 - type: entity
   id: SpawnVendingMachineRestockFood
@@ -27,8 +35,14 @@
         state: base
       - sprite: Objects/Specific/Service/vending_machine_restock.rsi
         state: refill_donuts
-  - type: GenericSpawner
-    entityTable: FoodVendorRestockEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - VendingMachineRestockDiscountDans
+      - VendingMachineRestockChang
+      - VendingMachineRestockDonut
+      - VendingMachineRestockGetmoreChocolateCorp
+      - VendingMachineRestockHappyHonk
+      - VendingMachineRestockCondimentStation
 
 - type: entity
   id: SpawnVendingMachineRestockDrink
@@ -43,5 +57,7 @@
         state: base
       - sprite: Objects/Specific/Service/vending_machine_restock.rsi
         state: refill_cola
-  - type: GenericSpawner
-    entityTable: DrinkVendorRestockEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - VendingMachineRestockRobustSoftdrinks
+      - VendingMachineRestockHotDrinks

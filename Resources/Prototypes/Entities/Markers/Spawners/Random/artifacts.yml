@@ -8,8 +8,19 @@
         - state: red
         - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
           state: ano01
-    - type: GenericSpawner
-      entityTable: ArtifactEntityTable
+    - type: RandomSpawner
+      prototypes:
+        - SimpleXenoArtifact
+        - MediumXenoArtifact
+        - MediumXenoArtifact
+        - MediumXenoArtifact
+        - MediumXenoArtifact
+        - ComplexXenoArtifact
+        - ComplexXenoArtifact
+        - ComplexXenoArtifact
+        - SimpleXenoArtifactItem
+        - MediumXenoArtifactItem
+        - ComplexXenoArtifactItem
       chance: 1
 
 - type: entity
@@ -17,5 +28,5 @@
   name: random artifact spawner [20]
   parent: RandomArtifactSpawner
   components:
-    - type: GenericSpawner
+    - type: RandomSpawner
       chance: 0.2

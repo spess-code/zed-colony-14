@@ -140,5 +140,12 @@
   id: ShardCrystalRandom
   name: random crystal shard
   components:
-  - type: GenericSpawner
-    entityTable: ShardCrystalEntityTable
+  - type: RandomSpawner
+    prototypes:
+      - ShardCrystalGreen
+      - ShardCrystalPink
+      - ShardCrystalOrange
+      - ShardCrystalBlue
+      - ShardCrystalCyan
+      - ShardCrystalRed
+    chance: 1

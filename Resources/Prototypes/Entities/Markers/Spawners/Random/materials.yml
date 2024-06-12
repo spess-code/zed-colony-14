@@ -10,8 +10,18 @@
         - state: red
         - sprite: Objects/Materials/Sheets/metal.rsi
           state: steel_3
-    - type: GenericSpawner
-      entityTable: MaterialsEntityTable
+    - type: RandomSpawner
+      rarePrototypes:
+        - SheetPlasteel10
+      rareChance: 0.2
+      prototypes:
+        - SheetSteel
+        - SheetGlass
+        - SheetPlastic
+        - CableApcStack
+        - CableMVStack
+        - CableHVStack
+      chance: 0.8
       offset: 0.0
 
 - type: entity
@@ -25,8 +35,11 @@
         - state: red
         - sprite: Objects/Materials/materials.rsi
           state: wood_2
-    - type: GenericSpawner
-      entityTable: SupplementaryMaterialsEntityTable
+    - type: RandomSpawner
+      prototypes:
+        - MaterialWoodPlank10
+        - MaterialCardboard10
+        - PartRodMetal10
       chance: 0.8
       offset: 0.0
 
@@ -43,8 +56,14 @@
         - state: red
         - sprite: Objects/Materials/Sheets/metal.rsi
           state: plasteel_2
-    - type: GenericSpawner
-      entityTable: HighValueMaterialsEntityTable
+    - type: RandomSpawner
+      rarePrototypes:
+        - SheetRPGlass
+      rareChance: 0.2
+      prototypes:
+        - SheetPlasteel
+        - SheetRGlass
+      chance: 0.8
       offset: 0.0
 
 - type: entity
@@ -57,8 +76,15 @@
         - state: red
         - sprite: Objects/Materials/Sheets/other.rsi
           state: plasma_2
-    - type: GenericSpawner
-      entityTable: HigherValueMaterialsEntityTable
+    - type: RandomSpawner
+      rarePrototypes:
+        - SheetUranium
+      rareChance: 0.2
+      prototypes:
+        - SheetPlasma
+        - IngotGold
+        - IngotSilver
+      chance: 0.8
       offset: 0.0
 
 # Surplus materials spawner.
@@ -74,8 +100,26 @@
         - state: red
         - sprite: Objects/Materials/Sheets/metal.rsi
           state: steel_3
-    - type: GenericSpawner
-      entityTable: SurplusMaterialsEntityTable
+    - type: RandomSpawner
+      rarePrototypes:
+        - SheetUranium1
+        - IngotGold1
+        - IngotSilver1
+      rareChance: 0.1
+      prototypes:
+        - SheetPlasteel10
+        - SheetPlasma1
+        - MaterialWoodPlank10
+        - PartRodMetal10
+        - SheetSteel10
+        - SheetGlass10
+        - MaterialCloth10
+        - MaterialCardboard10
+        - SheetPlastic10
+        - CableApcStack10
+        - CableMVStack10
+        - CableHVStack10
+      chance: 0.9
       offset: 0.0
 
 # Cable coil spawner
@@ -89,6 +133,15 @@
         - state: red
         - sprite: Objects/Tools/cable-coils.rsi
           state: coilall-30
-    - type: GenericSpawner
-      entityTable: CableCoilEntityTable
+    - type: RandomSpawner
+      rarePrototypes:
+        - CableApcStack10
+        - CableMVStack10
+        - CableHVStack10
+      rareChance: 0.1
+      prototypes:
+        - CableApcStack
+        - CableMVStack
+        - CableHVStack
+      chance: 0.9
       offset: 0.0

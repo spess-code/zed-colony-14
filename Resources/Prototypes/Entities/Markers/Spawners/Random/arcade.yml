@@ -8,6 +8,8 @@
       - state: red
       - sprite: Structures/Machines/arcade.rsi
         state: icon
-  - type: GenericSpawner
-    entityTable: ArcadeEntityTable
+  - type: RandomSpawner
+    prototypes:
+      - BlockGameArcade
+      - SpaceVillainArcadeFilled
     chance: 1

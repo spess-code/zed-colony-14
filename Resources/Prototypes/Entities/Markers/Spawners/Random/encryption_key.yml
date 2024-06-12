@@ -11,6 +11,17 @@
           state: crypt_rusted
         - sprite: Objects/Devices/encryption_keys.rsi
           state: nano_label
-    - type: GenericSpawner
-      entityTable: EncryptionKeysEntityTable
+    - type: RandomSpawner
+      rarePrototypes:
+        - EncryptionKeyCommand
+        - EncryptionKeySecurity
+      rareChance: 0.1
+      prototypes:
+        - EncryptionKeyCommon
+        - EncryptionKeyEngineering
+        - EncryptionKeyScience
+        - EncryptionKeyService
+        - EncryptionKeyMedical
+        - EncryptionKeyCargo
+      chance: 0.9
       offset: 0.0

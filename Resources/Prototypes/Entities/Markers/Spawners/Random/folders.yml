@@ -12,6 +12,13 @@
     layers:
       - state: folder-base
       - state: folder-colormap
-  - type: GenericSpawner
-    entityTable: FoldersEntityTable
+  - type: RandomSpawner
     offset: 0
+    prototypes:
+      - BoxFolderRed
+      - BoxFolderBlue
+      - BoxFolderYellow
+      - BoxFolderWhite
+      - BoxFolderGrey
+      - BoxFolderBlack
+      - BoxFolderGreen

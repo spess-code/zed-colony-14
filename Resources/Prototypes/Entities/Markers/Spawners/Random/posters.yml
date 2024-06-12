@@ -8,9 +8,15 @@
       - state: red
       - sprite: Structures/Wallmounts/posters.rsi
         state: random_anything
-  - type: GenericSpawner
+  - type: RandomSpawner
     offset: 0
-    entityTable: PostersEntityTable
+    prototypes:
+      - RandomPosterContraband
+      - RandomPosterLegit
+    chance: 0.95
+    rarePrototypes:
+      - PosterBroken
+    rareChance: 0.05
 
 - type: entity
   parent: MarkerBase
@@ -22,9 +28,71 @@
       - state: red
       - sprite: Structures/Wallmounts/posters.rsi
         state: random_contraband
-  - type: GenericSpawner
+  - type: RandomSpawner
     offset: 0
-    entityTable: ContrabandPostersEntityTable
+    prototypes:
+      - PosterContrabandFreeTonto
+      - PosterContrabandAtmosiaDeclarationIndependence
+      - PosterContrabandFunPolice
+      - PosterContrabandLustyExomorph
+      - PosterContrabandSyndicateRecruitment
+      - PosterContrabandClown
+      - PosterContrabandSmoke
+      - PosterContrabandGreyTide
+      - PosterContrabandMissingGloves
+      - PosterContrabandHackingGuide
+      - PosterContrabandRIPBadger
+      - PosterContrabandAmbrosiaVulgaris
+      - PosterContrabandDonutCorp
+      - PosterContrabandEAT
+      - PosterContrabandTools
+      - PosterContrabandPower
+      - PosterContrabandSpaceCube
+      - PosterContrabandCommunistState
+      - PosterContrabandLamarr
+      - PosterContrabandBorgFancy
+      - PosterContrabandBorgFancyv2
+      - PosterContrabandKosmicheskayaStantsiya
+      - PosterContrabandRebelsUnite
+      - PosterContrabandC20r
+      - PosterContrabandHaveaPuff
+      - PosterContrabandRevolver
+      - PosterContrabandDDayPromo
+      - PosterContrabandSyndicatePistol
+      - PosterContrabandEnergySwords
+      - PosterContrabandRedRum
+      - PosterContrabandCC64KAd
+      - PosterContrabandPunchShit
+      - PosterContrabandTheGriffin
+      - PosterContrabandFreeDrone
+      - PosterContrabandBustyBackdoorExoBabes6
+      - PosterContrabandRobustSoftdrinks
+      - PosterContrabandShamblersJuice
+      - PosterContrabandPwrGame
+      - PosterContrabandSunkist
+      - PosterContrabandSpaceCola
+      - PosterContrabandSpaceUp
+      - PosterContrabandKudzu
+      - PosterContrabandMaskedMen
+      - PosterContrabandUnreadableAnnouncement
+      - PosterContrabandFreeSyndicateEncryptionKey
+      - PosterContrabandBountyHunters
+      - PosterContrabandTheBigGasTruth
+      - PosterContrabandWehWatches
+      - PosterContrabandVoteWeh
+      - PosterContrabandBeachStarYamamoto
+      - PosterContrabandHighEffectEngineering
+      - PosterContrabandNuclearDeviceInformational
+      - PosterContrabandRevolt
+      - PosterContrabandRise
+      - PosterContrabandMoth
+      - PosterContrabandCybersun600
+      - PosterContrabandDonk
+      - PosterContrabandEnlistGorlex
+      - PosterContrabandInterdyne
+      - PosterContrabandWaffleCorp
+      - PosterContrabandMissingSpacepen
+    chance: 1
 
 - type: entity
   parent: MarkerBase
@@ -36,6 +104,50 @@
       - state: red
       - sprite: Structures/Wallmounts/posters.rsi
         state: random_legit
-  - type: GenericSpawner
+  - type: RandomSpawner
     offset: 0
-    entityTable: LegitPostersEntityTable
+    prototypes:
+      - PosterLegitHereForYourSafety
+      - PosterLegitNanotrasenLogo
+      - PosterLegitCleanliness
+      - PosterLegitHelpOthers
+      - PosterLegitBuild
+      - PosterLegitBlessThisSpess
+      - PosterLegitScience
+      - PosterLegitIan
+      - PosterLegitObey
+      - PosterLegitWalk
+      - PosterLegitStateLaws
+      - PosterLegitLoveIan
+      - PosterLegitSpaceCops
+      - PosterLegitUeNo
+      - PosterLegitGetYourLEGS
+      - PosterLegitDoNotQuestion
+      - PosterLegitWorkForAFuture
+      - PosterLegitSoftCapPopArt
+      - PosterLegitSafetyInternals
+      - PosterLegitSafetyEyeProtection
+      - PosterLegitSafetyReport
+      - PosterLegitReportCrimes
+      - PosterLegitIonRifle
+      - PosterLegitFoamForceAd
+      - PosterLegitCohibaRobustoAd
+      - PosterLegit50thAnniversaryVintageReprint
+      - PosterLegitFruitBowl
+      - PosterLegitPDAAd
+      - PosterLegitEnlist
+      - PosterLegitNanomichiAd
+      - PosterLegit12Gauge
+      - PosterLegitHighClassMartini
+      - PosterLegitTheOwl
+      - PosterLegitNoERP
+      - PosterLegitCarbonDioxide
+      - PosterLegitDickGumshue
+      - PosterLegitThereIsNoGasGiant
+      - PosterLegitJustAWeekAway
+      - PosterLegitSecWatch
+      - PosterLegitVacation
+      - PosterLegitPeriodicTable
+      - PosterLegitRenault
+      - PosterLegitNTTGC
+    chance: 1

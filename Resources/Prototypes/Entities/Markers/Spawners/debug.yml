@@ -9,5 +9,6 @@
     - state: green
     - sprite: Mobs/Species/Human/parts.rsi
       state: full
-  - type: GenericSpawner
-    entityTable: UristEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+    - MobHuman
