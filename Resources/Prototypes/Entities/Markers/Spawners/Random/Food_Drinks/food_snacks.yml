@@ -11,7 +11,39 @@
       - state: red
       - sprite: Objects/Consumable/Food/snacks.rsi
         state: cheesiehonkers
-  - type: GenericSpawner
-    entityTable: FoodSnacksEntityTable
+  - type: RandomSpawner
+  #small item
+    prototypes:
+      - FoodSnackBoritos
+      - FoodSnackCheesie
+      - FoodSnackChips
+      - FoodSnackChocolate
+      - FoodSnackEnergy
+      - FoodSnackChocolateBar
+      - FoodSnackPopcorn
+      - FoodSnackRaisins
+      - FoodSnackSus
+      - FoodSnackSyndi
+      - FoodSnackChowMein
+      - FoodSnackDanDanNoodles
+      - FoodSnackCookieFortune
+      - FoodSnackNutribrick
+      - FoodSnackMREBrownie
+      - FoodFrozenSandwich
+      - FoodFrozenSandwichStrawberry
+      - FoodFrozenFreezy
+      - FoodFrozenSundae
+      - FoodFrozenCornuto
+      - FoodFrozenPopsicleOrange
+      - FoodFrozenPopsicleBerry
+      - FoodFrozenPopsicleJumbo
+      - FoodFrozenSnowcone
+      - FoodFrozenSnowconeBerry
+      - FoodFrozenSnowconeFruit
+      - FoodFrozenSnowconeClown
+      - FoodFrozenSnowconeMime
+      - FoodFrozenSnowconeRainbow
+      - FoodSnackPistachios
+      - FoodSnackSemki
     chance: 0.8
     offset: 0.0

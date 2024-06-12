@@ -9,5 +9,17 @@
       - state: red
       - sprite: Structures/Machines/VendingMachines/random.rsi
         state: drink
-  - type: GenericSpawner
-    entityTable: VendingMachineDrinksEntityTable
+  - type: RandomSpawner
+    prototypes:
+      - VendingMachineCoffee
+      - VendingMachineCola
+      - VendingMachineColaRed
+      - VendingMachineColaBlack
+      - VendingMachineSovietSoda
+      - VendingMachineShamblersJuice
+      - VendingMachinePwrGame
+      - VendingMachineDrGibb
+      - VendingMachineSoda
+      - VendingMachineStarkist
+      - VendingMachineSpaceUp
+    chance: 1

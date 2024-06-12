@@ -7,8 +7,9 @@
     sprite: Markers/jobs.rsi
     layers:
       - state: green
-  - type: GenericSpawner
-    entityTable: SalvageHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - SalvageHumanCorpse
 
 - type: entity
   name: Random Service Corpse Spawner
@@ -19,8 +20,9 @@
     layers:
       - state: botanist
       - state: green
-  - type: GenericSpawner
-    entityTable: ServiceHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomServiceCorpse
 
 - type: entity
   name: Random Engineer Corpse Spawner
@@ -31,8 +33,9 @@
     layers:
       - state: engineer
       - state: green
-  - type: GenericSpawner
-    entityTable: EngiHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomEngineerCorpse
 
 - type: entity
   name: Random Cargo Corpse Spawner
@@ -43,8 +46,9 @@
     layers:
       - state: cargo_tech
       - state: green
-  - type: GenericSpawner
-    entityTable: CargoHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomCargoCorpse
 
 - type: entity
   name: Random Medic Corpse Spawner
@@ -55,8 +59,9 @@
     layers:
       - state: doctor
       - state: green
-  - type: GenericSpawner
-    entityTable: MedicHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomMedicCorpse
 
 - type: entity
   name: Random Science Corpse Spawner
@@ -67,8 +72,9 @@
     layers:
       - state: scientist
       - state: green
-  - type: GenericSpawner
-    entityTable: ScienceHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomScienceCorpse
 
 - type: entity
   name: Random Security Corpse Spawner
@@ -79,8 +85,9 @@
     layers:
       - state: security_officer
       - state: green
-  - type: GenericSpawner
-    entityTable: SecurityHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomSecurityCorpse
 
 - type: entity
   name: Random Command Corpse Spawner
@@ -91,5 +98,6 @@
     layers:
       - state: captain
       - state: green
-  - type: GenericSpawner
-    entityTable: CommandHumanCorpseEntityTable
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomCommandCorpse

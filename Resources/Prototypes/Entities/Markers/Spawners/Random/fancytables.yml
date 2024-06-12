@@ -8,6 +8,15 @@
         - state: red
         - sprite: Structures/Furniture/Tables/Fancy/blue.rsi
           state: full
-    - type: GenericSpawner
-      entityTable: FancyTablesEntityTable
+    - type: RandomSpawner
+      prototypes:
+        - TableFancyBlue
+        - TableFancyCyan
+        - TableFancyBlack
+        - TableFancyRed
+        - TableFancyPurple
+        - TableFancyPink
+        - TableFancyGreen
+        - TableFancyOrange
+        - TableFancyWhite
       offset: 0.0
