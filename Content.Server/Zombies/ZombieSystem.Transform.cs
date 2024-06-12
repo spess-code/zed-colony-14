@@ -206,9 +206,6 @@ namespace Content.Server.Zombies
             //popup
             _popup.PopupEntity(Loc.GetString("zombie-transform", ("target", target)), target, PopupType.LargeCaution);
 
-            //Make it sentient if it's an animal or something
-            MakeSentientCommand.MakeSentient(target, EntityManager);
-
             //Make the zombie not die in the cold. Good for space zombies
             if (TryComp<TemperatureComponent>(target, out var tempComp))
                 tempComp.ColdDamage.ClampMax(0);
@@ -231,6 +228,9 @@ namespace Content.Server.Zombies
             var htn = EnsureComp<HTNComponent>(target);
             htn.RootTask = new HTNCompoundTask() { Task = "SimpleHostileCompound" };
             htn.Blackboard.SetValue(NPCBlackboard.Owner, target);
+            htn.Blackboard.SetValue(NPCBlackboard.NavSmash, true);
+            htn.Blackboard.SetValue(NPCBlackboard.NavClimb, true);
+            htn.Blackboard.SetValue(NPCBlackboard.NavPry, true);
             _npc.SleepNPC(target, htn);
 
             //He's gotta have a mind
@@ -249,16 +249,6 @@ namespace Content.Server.Zombies
             else
             {
                 _npc.WakeNPC(target, htn);
-            }
-
-            if (!HasComp<GhostRoleMobSpawnerComponent>(target) && !hasMind) //this specific component gives build test trouble so pop off, ig
-            {
-                //yet more hardcoding. Visit zombie.ftl for more information.
-                var ghostRole = EnsureComp<GhostRoleComponent>(target);
-                EnsureComp<GhostTakeoverAvailableComponent>(target);
-                ghostRole.RoleName = Loc.GetString("zombie-generic");
-                ghostRole.RoleDescription = Loc.GetString("zombie-role-desc");
-                ghostRole.RoleRules = Loc.GetString("zombie-role-rules");
             }
 
             if (TryComp<HandsComponent>(target, out var handsComp))
