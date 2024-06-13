@@ -603,10 +603,10 @@
   metabolisms:
     Medicine:
       effects:
-        - !type:CureZombieInfection
-          conditions:
-            - !type:ReagentThreshold
-              min: 10
+        - !type:HealthChange
+         damage:
+            types:
+             Cellular: -1
 
 - type: reagent
   id: AmbuzolPlus
@@ -619,11 +619,10 @@
   metabolisms:
     Medicine:
       effects:
-        - !type:CureZombieInfection
-          innoculate: true
-          conditions:
-            - !type:ReagentThreshold
-              min: 5
+       - !type:HealthChange
+         damage:
+            types:
+             Cellular: -2
 
 - type: reagent
   id: PulpedBananaPeel
@@ -1148,7 +1147,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 12
-          
+
 - type: reagent
   id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
   name: reagent-name-opporozidone
