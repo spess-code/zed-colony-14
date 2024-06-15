@@ -128,6 +128,18 @@
 
 - type: entity
   parent: BasePDA
+  id: CitizenPDA
+  name: citizen PDA
+  description: Your personal PDA.
+  components:
+  - type: Pda
+    id: CitizenIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#6a6d65"
+
+- type: entity
+  parent: BasePDA
   id: TechnicalAssistantPDA
   name: technical assistant PDA
   description: Why isn't it yellow?

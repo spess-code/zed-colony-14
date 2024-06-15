@@ -11909,7 +11909,7 @@ entities:
     - type: Transform
       pos: -9.5,0.5
       parent: 407
-- proto: SpawnPointPassenger
+- proto: SpawnPointCitizen
   entities:
   - uid: 2060
     components:

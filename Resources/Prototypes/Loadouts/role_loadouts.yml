@@ -34,6 +34,17 @@
   - Trinkets
 
 - type: roleLoadout
+  id: JobCitizen
+  groups:
+  - PassengerJumpsuit
+  - PassengerFace
+  - PassengerGloves
+  - PassengerOuterClothing
+  - PassengerShoes
+  - Glasses
+  - Trinkets
+
+- type: roleLoadout
   id: JobBartender
   groups:
   - BartenderHead

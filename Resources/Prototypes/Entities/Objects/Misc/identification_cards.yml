@@ -40,6 +40,18 @@
     job: Passenger
 
 - type: entity
+  parent: IDCardStandard
+  id: CitizenIDCard
+  name: citizen ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idcitizen
+  - type: PresetIdCard
+    job: Citizen
+
+- type: entity
   parent: PassengerIDCard
   id: TechnicalAssistantIDCard
   name: technical assistant ID card

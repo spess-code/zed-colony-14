@@ -3,5 +3,10 @@
   name: job-name-citizen
   description: job-description-citizen
   playTimeTracker: JobCitizen
-  startingGear: LimitedPassengerGear
+  startingGear: CitizenGear
   icon: "JobIconCitizen"
+
+- type: startingGear
+  id: CitizenGear
+  equipment:
+    id: CitizenPDA
