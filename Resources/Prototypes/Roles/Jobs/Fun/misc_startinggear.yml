@@ -213,12 +213,13 @@
     pocket1: BikeHorn
     pocket2: ClownRecorder
 
-# Passenger but without the ID, bag, or headset
+# Passenger but without the bag or headset
 - type: startingGear
   id: LimitedPassengerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
     shoes: ClothingShoesColorBlack
+    id: PassengerPDA
 
 #Clown Troupe
 - type: startingGear

@@ -1,0 +1,7 @@
+- type: job
+  id: Citizen
+  name: job-name-citizen
+  description: job-description-citizen
+  playTimeTracker: JobCitizen
+  startingGear: LimitedPassengerGear
+  icon: "JobIconCitizen"

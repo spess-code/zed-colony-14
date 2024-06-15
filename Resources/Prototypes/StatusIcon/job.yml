@@ -210,6 +210,13 @@
 
 - type: statusIcon
   parent: JobIcon
+  id: JobIconCitizen
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Citizen
+
+- type: statusIcon
+  parent: JobIcon
   id: JobIconChiefEngineer
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
