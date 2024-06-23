@@ -10,7 +10,7 @@
       placementOption: AlignTileAny
       tileId: Space
   assignments:
-  - 0: 8
+  - 0: 1
   name: space
 - action: !type:InstantActionComponent
     icon: Interface/VerbIcons/delete.svg.192dpi.png
@@ -23,7 +23,7 @@
     event: !type:StartPlacementActionEvent
       eraser: True
   assignments:
-  - 0: 9
+  - 0: 2
   name: action-name-mapping-erase
 - action: !type:InstantActionComponent
     icon:
@@ -38,7 +38,7 @@
       placementOption: SnapgridCenter
       entityType: WallSolid
   assignments:
-  - 0: 0
+  - 0: 3
   name: WallSolid
 - action: !type:InstantActionComponent
     icon:
@@ -53,8 +53,36 @@
       placementOption: SnapgridCenter
       entityType: Window
   assignments:
-  - 0: 2
+  - 0: 4
   name: Window
+- action: !type:InstantActionComponent
+    icon: /Textures/Tiles/shuttleorange.png
+    keywords: []
+    checkCanInteract: False
+    checkConsciousness: False
+    clientExclusive: True
+    autoPopulate: False
+    temporary: True
+    event: !type:StartPlacementActionEvent
+      placementOption: AlignTileAny
+      tileId: FloorShuttleOrange
+  assignments:
+  - 0: 5
+  name: orange shuttle floor
+- action: !type:InstantActionComponent
+    icon: /Textures/Tiles/shuttlered.png
+    keywords: []
+    checkCanInteract: False
+    checkConsciousness: False
+    clientExclusive: True
+    autoPopulate: False
+    temporary: True
+    event: !type:StartPlacementActionEvent
+      placementOption: AlignTileAny
+      tileId: FloorShuttleRed
+  assignments:
+  - 0: 6
+  name: red shuttle floor
 - action: !type:InstantActionComponent
     icon: /Textures/Tiles/steel.png
     keywords: []
@@ -67,6 +95,6 @@
       placementOption: AlignTileAny
       tileId: FloorSteel
   assignments:
-  - 0: 6
-  name: steel floor
+  - 0: 7
+  name: steel tile
 ...
