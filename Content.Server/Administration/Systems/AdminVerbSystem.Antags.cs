@@ -44,10 +44,12 @@ public sealed partial class AdminVerbSystem
         if (!_adminManager.HasAdminFlag(player, AdminFlags.Fun))
             return;
 
-        if (!HasComp<MindContainerComponent>(args.Target) || !TryComp<ActorComponent>(args.Target, out var targetActor))
+        // That is a BAD fix for everything that is not a zombie, but I do not need antags, so it will probably be fine?
+        if (!HasComp<MindContainerComponent>(args.Target))
             return;
 
-        var targetPlayer = targetActor.PlayerSession;
+        TryComp<ActorComponent>(args.Target, out var targetActor);
+        var targetPlayer = targetActor?.PlayerSession;
 
         Verb traitor = new()
         {
