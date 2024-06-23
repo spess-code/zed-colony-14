@@ -1,4 +1,4 @@
-<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/spess-code/zed-colony-14/e176021d53ce90e8a92bed38e4d7c5fd95fe6fe3/Resources/Textures/Logo/logo.svg" /></p>
+<p align="center"> <img alt="Zed Colony 14" width="880" height="300" src="https://raw.githubusercontent.com/spess-code/zed-colony-14/e176021d53ce90e8a92bed38e4d7c5fd95fe6fe3/Resources/Textures/Logo/logo.svg" /></p>
 
 Zed Colony 14 is a fork of Space Station 14 that takes place on a space colony in the middle of a zombie outbreak.
 
