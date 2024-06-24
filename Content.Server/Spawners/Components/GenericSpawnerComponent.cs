@@ -36,4 +36,7 @@ public partial class GenericSpawnerComponent : Component
     [DataField]
     public bool DeleteSpawnerAfterSpawn = true;
 
+    [DataField]
+    public bool ZombifyOnSpawn = false;
+
 }

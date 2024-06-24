@@ -2,6 +2,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Server.GameTicking;
 using Content.Server.Spawners.Components;
+using Content.Server.Zombies;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -18,6 +19,7 @@ public sealed class GenericSpawnerSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _robustRandom = default!;
     [Dependency] private readonly GameTicker _ticker = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private readonly ZombieSystem _zombie = default!;
 
     public override void Initialize()
     {
@@ -100,7 +102,11 @@ public sealed class GenericSpawnerSystem : EntitySystem
             var yOffset = _robustRandom.NextFloat(-offset, offset);
             var coordinates = Transform(uid).Coordinates.Offset(new Vector2(xOffset, yOffset));
 
-            EntityManager.SpawnEntity(entity, coordinates);
+            var entityUid = EntityManager.SpawnEntity(entity, coordinates);
+            if (component.ZombifyOnSpawn)
+            {
+                _zombie.ZombifyEntity(entityUid);
+            }
         }
     }
 }

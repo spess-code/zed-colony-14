@@ -1,0 +1,13 @@
+- type: entity
+  name: Zombie Spawner
+  id: SpawnMobZombie
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+  - type: GenericSpawner
+    entityTable: UristEntityTable
+    zombifyOnSpawn: true

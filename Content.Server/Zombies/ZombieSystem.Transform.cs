@@ -79,6 +79,7 @@ namespace Content.Server.Zombies
         /// </summary>
         /// <param name="target">the entity being zombified</param>
         /// <param name="mobState"></param>
+        /// <param name="silent"></param>
         /// <remarks>
         ///     ALRIGHT BIG BOYS, GIRLS AND ANYONE ELSE. YOU'VE COME TO THE LAYER OF THE BEAST. THIS IS YOUR WARNING.
         ///     This function is the god function for zombie stuff, and it is cursed. I have
@@ -86,7 +87,7 @@ namespace Content.Server.Zombies
         ///     rewrite this, but this is how it shall lie eternal. Turn back now.
         ///     -emo
         /// </remarks>
-        public void ZombifyEntity(EntityUid target, MobStateComponent? mobState = null)
+        public void ZombifyEntity(EntityUid target, MobStateComponent? mobState = null, bool silent = false)
         {
             //Don't zombfiy zombies
             if (HasComp<ZombieComponent>(target) || HasComp<ZombieImmuneComponent>(target))
@@ -204,7 +205,10 @@ namespace Content.Server.Zombies
             _inventory.TryUnequip(target, "ears", true, true);
 
             //popup
-            _popup.PopupEntity(Loc.GetString("zombie-transform", ("target", target)), target, PopupType.LargeCaution);
+            if (!silent)
+            {
+                _popup.PopupEntity(Loc.GetString("zombie-transform", ("target", target)), target, PopupType.LargeCaution);
+            }
 
             //Make the zombie not die in the cold. Good for space zombies
             if (TryComp<TemperatureComponent>(target, out var tempComp))
