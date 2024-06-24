@@ -30,7 +30,7 @@
     solution: tank
     generated:
       reagents:
-      - ReagentId: Water
+      - ReagentId: DirtyWater
         Quantity: 1
   - type: DrainableSolution
     solution: tank
@@ -71,7 +71,7 @@
   name: sink
   id: Sink
   parent: SinkEmpty
-  suffix: Water
+  suffix: DirtyWater
   components:
   - type: SolutionContainerManager
     solutions:
@@ -79,7 +79,7 @@
         maxVol: 200
       tank:
         reagents:
-        - ReagentId: Water
+        - ReagentId: DirtyWater
           Quantity: 500
 
 - type: entity
@@ -118,7 +118,7 @@
   name: sink
   id: SinkStemlessWater
   parent: SinkStemless
-  suffix: Water
+  suffix: DirtyWater
   components:
   - type: SolutionContainerManager
     solutions:
@@ -126,5 +126,5 @@
         maxVol: 100
       tank:
         reagents:
-        - ReagentId: Water
+        - ReagentId: DirtyWater
           Quantity: 500
