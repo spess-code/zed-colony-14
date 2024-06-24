@@ -73,6 +73,9 @@ reagent-desc-tonic-water = It tastes strange but at least the quinine keeps the 
 reagent-name-water = water
 reagent-desc-water = A colorless liquid that humans need in order to survive.
 
+reagent-name-dirty-water = dirty water
+reagent-desc-dirty-water = Probably not safe to drink.
+
 reagent-name-ice = ice
 reagent-desc-ice = Frozen water.
 

@@ -25,6 +25,7 @@ reagent-physical-desc-wormy = wormy
 reagent-physical-desc-frosty = frosty
 reagent-physical-desc-blazing = blazing
 reagent-physical-desc-translucent = translucent
+reagent-physical-desc-partially-translucent = partially translucent
 reagent-physical-desc-sugary = sugary
 reagent-physical-desc-putrid = putrid
 reagent-physical-desc-saucey = saucey

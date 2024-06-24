@@ -182,6 +182,7 @@ flavor-complex-rocksandstones = like rocks and stones
 
 ## Basic drinks
 flavor-complex-water = like water
+flavor-complex-dirty-water = like swamp
 flavor-complex-beer = like piss
 flavor-complex-cognac = like dry spicy alcohol
 flavor-complex-mead = like fermented honey

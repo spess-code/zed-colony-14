@@ -21,6 +21,16 @@
     EggCooked: 0.5
 
 - type: reaction
+  id: WaterPurify
+  impact: Low
+  minTemp: 370
+  reactants:
+    DirtyWater:
+      amount: 0.5
+  products:
+    Water: 0.5
+
+- type: reaction
   id: SapBoiling
   impact: Low
   minTemp: 377

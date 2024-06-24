@@ -555,6 +555,11 @@
   description: flavor-complex-water
 
 - type: flavor
+  id: dirtywater
+  flavorType: Complex
+  description: flavor-complex-dirty-water
+
+- type: flavor
   id: mopwata
   flavorType: Complex
   description: flavor-complex-mopwata
