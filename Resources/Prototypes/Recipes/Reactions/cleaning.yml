@@ -11,6 +11,16 @@
     Bleach: 5
 
 - type: reaction
+  id: PurifyWater
+  reactants:
+    DirtyWater:
+      amount: 10
+    Bleach:
+      amount: 1
+  products:
+    Water: 5
+
+- type: reaction
   id: SpaceCleaner
   reactants:
     Ammonia:
