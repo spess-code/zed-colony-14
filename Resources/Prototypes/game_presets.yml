@@ -1,4 +1,15 @@
 - type: gamePreset
+  id: Outbreak
+  alias:
+  - outbreak
+  name: outbreak-title
+  showInVote: true
+  description: outbreak-description
+  rules:
+  - RampingStationEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
   id: Survival
   alias:
     - survival
