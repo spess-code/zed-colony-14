@@ -1,0 +1,14 @@
+- type: gameMap
+  id: Greenhills
+  mapName: 'Green Hills'
+  mapPath: /Maps/greenhills.yml
+  minPlayers: 1
+  stations:
+    Greenhills:
+      stationProto: NanotrasenCentralCommand
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Central Command {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: 'TG'
