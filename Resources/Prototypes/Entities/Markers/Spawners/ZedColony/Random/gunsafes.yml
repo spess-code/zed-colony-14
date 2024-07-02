@@ -1,0 +1,13 @@
+- type: entity
+  name: random civilian gun safe spawner
+  id: CivilianGunSafeSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Structures/Storage/closet.rsi
+      state: shotguncase
+  - type: GenericSpawner
+    entityTable: CivilianSafeEntityTable
+    offset: 0.0

@@ -1,0 +1,6 @@
+- type: weightedRandomEntity
+  id: CivilianSafeEntityTable
+  weights:
+    GunSafeCivilianMk58: 1
+    GunSafeCivilianDisabler: 1
+    GunSafeCivilianDoubleBarrel: 1
