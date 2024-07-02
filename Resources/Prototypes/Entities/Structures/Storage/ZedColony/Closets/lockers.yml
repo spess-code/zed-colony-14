@@ -1,0 +1,11 @@
+- type: entity
+  id: GunSafeCivilian
+  parent: LockerBaseSecure
+  name: civilian gun safe
+  description: If you have a permit for a gun, you are obligated to store your firearm here when not in use.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: shotguncase
+    stateDoorOpen: shotguncase_open
+    stateDoorClosed: shotguncase_door

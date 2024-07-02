@@ -1,0 +1,33 @@
+- type: entity
+  parent: GunSafeCivilian
+  id: GunSafeCivilianMk58
+  name: mk58 civilian safe
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolMk58
+      amount: 1
+    - id: MagazinePistol
+      amount: 2
+
+- type: entity
+  parent: GunSafeCivilian
+  id: GunSafeCivilianDisabler
+  name: disabler civilian safe
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponDisabler
+      amount: 1
+
+- type: entity
+  parent: GunSafeCivilian
+  id: GunSafeCivilianDoubleBarrel
+  name: shotgun civilian safe
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponShotgunDoubleBarreled
+      amount: 1
+    - id: BoxLethalshot
+      amount: 1
