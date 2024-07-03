@@ -42,6 +42,7 @@
   - type: Tag
     tags:
     - BaseballBat
+  - type: MeleeThrowOnHit
 
 - type: entity
   name: barbed wire baseball bat
@@ -62,13 +63,6 @@
         Piercing: 2.5
     soundHit:
       collection: MetalThud
-  - type: IncreaseDamageOnWield
-    damage:
-      types:
-        Blunt: 5
-        Structural: 10
-        Slash: 2.5
-        Piercing: 2.5
   - type: Construction
     graph: WoodenBat
     node: barbbat
@@ -96,6 +90,8 @@
   suffix: Do not map
   components:
   - type: MeleeThrowOnHit
+    speed: 10
+    lifetime: 3
   - type: MeleeWeapon
     damage:
       types:

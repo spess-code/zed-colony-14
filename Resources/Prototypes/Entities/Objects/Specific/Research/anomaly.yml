@@ -134,6 +134,8 @@
         Blunt: 20
   - type: CorePoweredThrower
   - type: MeleeThrowOnHit
+    speed: 10
+    lifetime: 3
     unanchorOnHit: true
     enabled: false
   - type: ItemSlots
