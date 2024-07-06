@@ -11,14 +11,26 @@
     Bleach: 5
 
 - type: reaction
+  id: Chloranol
+  reactants:
+    Oxygen:
+      amount: 1
+    Chlorine:
+      amount: 1
+    Hydrogen:
+      amount: 1
+  products:
+    Chloranol: 3
+
+- type: reaction
   id: PurifyWater
   reactants:
     DirtyWater:
       amount: 10
-    Bleach:
+    Chloranol:
       amount: 1
   products:
-    Water: 5
+    Water: 10
 
 - type: reaction
   id: SpaceCleaner
