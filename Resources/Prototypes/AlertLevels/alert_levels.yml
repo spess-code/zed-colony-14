@@ -1,6 +1,6 @@
 - type: alertLevels
   id: stationAlerts
-  defaultLevel: green
+  defaultLevel: conop
   levels:
     green:
       announcement: alert-level-green-announcement
@@ -70,3 +70,13 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+    conop:
+      announcement: alert-level-conop-announcement
+      sound:
+        path: /Audio/Misc/epsilon.ogg
+        params:
+          volume: -2
+      color: MediumSeaGreen
+      emergencyLightColor: MediumSeaGreen
+      forceEnableEmergencyLights: true
+      shuttleTime: 600
