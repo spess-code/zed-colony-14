@@ -5,6 +5,7 @@
   playTimeTracker: JobCitizen
   startingGear: CitizenGear
   icon: "JobIconCitizen"
+  setPreference: true
 
 - type: startingGear
   id: CitizenGear
