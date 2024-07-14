@@ -5,7 +5,7 @@
   playTimeTracker: JobLibrarian
   startingGear: LibrarianGear
   icon: "JobIconLibrarian"
-  supervisors: job-supervisors-hop
+  setPreference: true
   access:
   - Service
   - Maintenance
